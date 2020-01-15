@@ -101,8 +101,6 @@ public class DataTableSettingsBean implements Serializable {
 	
 	private boolean scrollToDemo = false;
 	
-	private boolean lengthChange = true; 
-	
 	@ManagedProperty("#{carPool.carPool}")
 	private List<Car> carPool;
 
@@ -541,13 +539,5 @@ public class DataTableSettingsBean implements Serializable {
 
 	public void setPagingType(boolean pagingType) {
 		this.pagingType = pagingType;
-	}
-	
-	public boolean isLengthChange() {
-		return lengthChange;
-	}
-
-	public void setLengthChange(boolean lengthChange) {
-		this.lengthChange = lengthChange;
 	}
 }
